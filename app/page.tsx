@@ -5,7 +5,7 @@ import MyExperience from '@/components/MyExperience/MyExperience'
 import MyStack from '@/components/MyStack/MyStack'
 import MyServices from '@/components/MyServices/MyServices'
 import ShowCase from '@/components/ShowCase'
-import Testimonials from '@/components/Testimonials'
+// import Testimonials from '@/components/Testimonials'
 
 export default function Home() {
   return (
