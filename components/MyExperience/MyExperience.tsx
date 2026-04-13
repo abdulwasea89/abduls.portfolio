@@ -1,7 +1,7 @@
 "use client"
 import { briefcaseIconley } from '@/app/assets/assets'
 import { myExperience } from '@/data'
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import SectionHeading from '../SectionHeading'
