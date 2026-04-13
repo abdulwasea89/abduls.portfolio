@@ -16,23 +16,23 @@ export default function Navbar() {
         return { hh, period };
     };
 
-    const updateTime = () => {
-        const today = new Date();
-        const hh = today.getHours();
-        const mm = today.getMinutes();
-        const ss = today.getSeconds();
-        const { hh: formattedHH, period } = convertTo12HourFormat(hh);
-
-        const formattedTime = `${formatTime(formattedHH)}:${formatTime(mm)}:${formatTime(ss)} ${period}`;
-        console.log("Formatted Time:", formattedTime); // Debug log
-        setTime(formattedTime);
-    };
-
     useEffect(() => {
+        const updateTime = () => {
+            const today = new Date();
+            const hh = today.getHours();
+            const mm = today.getMinutes();
+            const ss = today.getSeconds();
+            const { hh: formattedHH, period } = convertTo12HourFormat(hh);
+
+            const formattedTime = `${formatTime(formattedHH)}:${formatTime(mm)}:${formatTime(ss)} ${period}`;
+            console.log("Formatted Time:", formattedTime); // Debug log
+            setTime(formattedTime);
+        };
+
         updateTime();
         const intervalId = setInterval(updateTime, 1000);
         return () => clearInterval(intervalId);
-    }, [updateTime]);
+    }, []);
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 

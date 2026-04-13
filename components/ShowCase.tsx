@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Image from 'next/image'
 import SectionHeading from './SectionHeading'
 import { flyIcon, linkIcon } from '@/app/assets/assets'
 import Link from 'next/link'
