@@ -52,7 +52,7 @@ export default function ShowCase({ isMore = true, showData = 2, layout = 'grid' 
                 className="flex items-center justify-center gap-2 bg-almost-black border border-dark-gray-4 rounded-lg p-3 mt-3 hover:bg-dark-gray-4 transition group"
               >
                 <div className="w-4 h-4 relative group-hover:scale-110 transition-transform">
-                  <img src={linkIcon.src} alt="Link Icon" className="object-cover w-full h-full"/>
+                  <Image src={linkIcon.src} alt="Link Icon" fill className="object-cover w-full h-full"/>
                 </div>
                 <p className="text-light-gray-3 text-sm truncate group-hover:text-white transition-colors">{item.link}</p>
               </Link>
